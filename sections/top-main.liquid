@@ -1,0 +1,299 @@
+<div class="mv">
+  <div class="block">
+
+    <div class="layer">
+      <div class="mv-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide img-box obj-fit mv01">
+            <picture>
+              <source srcset="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/mv01.jpg" media="(max-width: 769px)">
+              <img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/mv01.jpg" alt="">
+            </picture>
+          </div><!-- /.swiper-slide -->
+          <div class="swiper-slide img-box obj-fit mv02">
+            <picture>
+              <source srcset="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/mv01.jpg" media="(max-width: 769px)">
+              <img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/mv01.jpg" alt="">
+            </picture>
+          </div><!-- /.swiper-slide -->
+          <div class="swiper-slide img-box obj-fit mv03">
+            <picture>
+              <source srcset="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/mv01.jpg" media="(max-width: 769px)">
+              <img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/mv01.jpg" alt="">
+            </picture>
+          </div><!-- /.swiper-slide -->
+        </div><!-- /.swiper-wrapper -->
+      </div><!-- /.mv-swiper -->
+
+      <div class="logo img-box"><a href="{{ routes.root_url }}"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/logo.png" alt=""></a></div>
+
+      <nav class="mv-nav01">
+        <ul>
+          <li><a href="/collections/all/">商品一覧</a></li>
+          <li><a href="/pages/concept/">ストーリー</a></li>
+          <li><a href="#">商品へのこだわり</a></li>
+          <li><a href="/pages/pages/">よくあるご質問</a></li>
+          <li><a href="/pages/contact-form/">お問い合わせ</a></li>
+        </ul>
+      </nav>
+
+      <nav class="mv-nav02">
+        <ul>
+          <li><a href="/cart/"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/icon-cart.svg" alt="">CART</a></li>
+          <li><a href="/account/"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/icon-login.svg" alt="">LOGIN</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</div><!-- /.mv -->
+
+<section class="p-top_wrap01">
+
+  <div class="inner-wide">
+
+    <div class="layer">
+      <div class="inner">
+
+        <div class="logo img-box"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/logo.png" alt=""></div>
+        <div class="flex">
+          <div class="left fade_triger">
+            <div class="img-box anime-fade"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/top-about_img01.jpg" alt=""></div>
+            <div class="img-box anime-fade"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/top-about_img02.jpg" alt=""></div>
+            <div class="img-box anime-fade"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/top-about_img03.jpg" alt=""></div>
+          </div><!-- /.left -->
+          <div class="right">
+            <div class="box flex">
+              <h2><span>南国の黒糖屋さんがつくる、<br>旅するナッツ</span></h2>
+              <p>
+                <span>
+                  テキストテキストテキストテキスト<br>
+                  テキストテキストテキストテキスト<br>
+                  テキストテキストテキストテキスト<br>
+                  テキストテキストテキストテキストテキスト<br>
+                  テキストテキストテキストテキストテキスト<br>
+                  テキストテキストテキストテキストテキスト
+                </span>
+              </p>
+            </div>
+            <div class="btn-wrap">
+              <a href="/pages/concept/" class="btn01">
+                CONCEPT STORY
+              </a>
+            </div>
+          </div><!-- /.right -->
+        </div><!-- /.flex -->
+
+      </div><!-- /.inner -->
+    </div>
+
+    <div class="ashirai img-box"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/top_ashirai.svg" alt=""></div><!-- /.ashirai -->
+
+  </div><!-- /.inner-wide -->
+  
+</section><!-- /.p-top_wrap01 -->
+
+<div class="top-img-sec img-box obj-fit">
+  <div class="layer">
+    <img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/top-about_img04.jpg" alt="">
+  </div>
+</div><!-- /.img-sec -->
+
+<div class="top-banner_wrap">
+
+  <div class="inner layer">
+
+    {% for block in section.blocks %}
+      {% if block.type == 'banner-top' %}
+        <div class="card-wrapper">
+          <div class="card-contents">
+            <div class="img-box">
+              <a href="{{ block.settings.link_banner }}">
+                <picture>
+                  <source srcset="{{ block.settings.image_banner_sp | img_url: 'master' }}" media="(max-width: 769px)">
+                  <img src="{{ block.settings.image_banner_pc | img_url: 'master' }}" alt="">
+                </picture>
+                <div class="btn-wrap"><p class="btn01">VIEW DETAIL</p></div>
+              </a>
+            </div><!-- /.img-box -->
+          </div>
+        </div><!-- /.card-wrapper -->
+      {% endif %}
+    {% endfor %}
+
+  </div>
+
+</div><!-- /.top-banner_wrap -->
+
+
+<section class="p-top_wrap02 layer">
+
+    <div class="head-ttl">
+      <div class="img-box"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/icon-logo.svg" alt=""></div>
+      <h2>商品一覧</h2>
+    </div>
+
+    <div class="itemlist-swiper">
+
+      <div class="swiper-wrapper">
+
+      {% for product in collections.all.products limit: 10 %}
+        <div class="item-card swiper-slide">
+          <a href="{{ product.url }}" class="h-scale">
+            <div class="img-box">
+              <img src="{{ product.featured_image.src | img_url: 'master' }}" alt="">
+            </div>
+            <p class="cate">
+              {% for collection in product.collections %}
+                {% assign excluded_collections = 'all,tax' | split: ',' %}
+                {% unless excluded_collections contains collection.handle %}
+                  {{ collection.title }}
+                {% endunless %}
+              {% endfor %}
+            </p>
+            <p class="name">{{ product.title }}</p>
+            <p class="price">{{ product.price | money }}<span>(税込)</span></p>
+          </a>
+          <a href="#" class="add-cart add-to-cart-btn"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/add-cart.svg" alt=""></a>
+        </div><!-- /.item-card -->
+      {% endfor %}
+      <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+            addToCartButtons.forEach(function(button) {
+              button.addEventListener('click', function() {
+                var variantId = this.getAttribute('data-variant-id');
+                var quantity = 1; 
+                fetch('/cart/add.js', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({
+                    items: [{
+                      id: variantId,
+                      quantity: quantity
+                    }]
+                  })
+                })
+                .then(response => response.json())
+                .then(data => {
+                  console.log('商品がカートに追加されました', data);
+                  alert('商品がカートに追加されました！');
+                })
+                .catch(error => {
+                  console.error('カートへの追加に失敗しました。', error);
+                  alert('カートへの追加に失敗しました。');
+                });
+              });
+            });
+          });
+        </script>
+
+      </div><!-- /.swiper-wrapper -->
+
+  </div><!-- /.itemlist-swiper -->
+
+  <div class="btn-wrap">
+    <a href="/collections/all/" class="btn01">
+      ALL PRODUCTS
+    </a>
+  </div>
+  
+</section><!-- /.p-top_wrap02 -->
+
+<section class="p-top_wrap03">
+  <div class="layer">
+    <div class="inner flex">
+      <div class="left flex">
+        <div class="head-ttl">
+          <div class="img-box"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/icon-logo.svg" alt=""></div>
+          <h2>商品へのこだわり</h2>
+        </div>
+        <div class="txt-box">
+          <p>
+            テキストテキストテキストテキスト<br>
+            テキストテキストテキストテキストテキストテキスト<br>
+            テキストテキストテキストテキスト<br>
+            <br>
+            テキストテキストテキストテキスト<br>
+            テキストテキストテキストテキストテキスト
+          </p>
+          <div class="btn-wrap"><a href="#" class="btn01">FEATURES</a></div>
+        </div>
+      </div>
+      <div class="right fade_triger">
+        <div class="img-box anime-fade"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/top-feautyur_img01.jpg" alt=""></div>
+        <div class="img-box anime-fade"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/top-feautyur_img02.jpg" alt=""></div>
+        <div class="img-box anime-fade"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/top-feautyur_img03.jpg" alt=""></div>
+      </div>
+    </div>
+    <div class="top-img-sec02 img-box anime-para">
+      <img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/top-parallax_img.jpg" alt="">
+    </div><!-- /.top-img-sec02 -->
+  </div>
+
+</section>
+
+<div class="commmon-faq_wrap">
+  <div class="inner">
+    <div class="block flex">
+        <div class="box">
+          <div class="img-box obj-fit"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/faq-hover_img01.jpg" alt=""></div>
+          <a href="/pages/faq/" class="layer">
+            <p>よくあるご質問</p>
+            <div class="btn-wrap"><div class="btn01">FAQ</div></div>
+          </a>
+        </div><!-- /.box -->
+        <div class="box">
+          <div class="img-box obj-fit"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/faq-hover_img02.jpg" alt=""></div>
+          <a href="/pages/contact-form/" class="layer">
+            <p>お問い合わせ</p>
+            <div class="btn-wrap"><div class="btn01">CONTACT</div></div>
+          </a>
+        </div><!-- /.box -->
+        <div class="box">
+          <div class="img-box obj-fit"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/faq-hover_img03.jpg" alt=""></div>
+          <a href="/pages/company/" class="layer">
+            <p>会社概要</p>
+            <div class="btn-wrap"><div class="btn01">COMPANY</div></div>
+          </a>
+        </div><!-- /.box -->
+    </div><!-- /.block -->
+  </div>
+</div><!-- /.commmon-faq_wrap -->
+
+
+{% schema %}
+  {
+    "name": "top-main",
+    "presets": [
+      {
+        "name": "top-main"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "banner-top",
+        "name": "バナー",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_banner_pc",
+            "label": "PC画像"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_banner_sp",
+            "label": "SP画像"
+          },
+          {
+            "type": "url",
+            "id": "link_banner",
+            "label": "リンク"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

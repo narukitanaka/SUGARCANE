@@ -711,7 +711,7 @@ top
 .top-banner_wrap .card-wrapper .img-box a .btn-wrap .btn01::before {
   background: url(https://cdn.shopify.com/s/files/1/0660/0186/2794/files/btn-arrow03.svg) no-repeat center/contain;
 }
-.top-banner_wrap .card02 .img-box {
+.top-banner_wrap .pin-spacer:nth-of-type(2) .img-box {
   transform: rotate(2deg);
 }
 

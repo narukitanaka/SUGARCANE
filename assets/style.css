@@ -1915,6 +1915,70 @@ top
   display: none;
 }
 
+/*************************************************
+お問い合わせ　-送信後
+*************************************************/
+.form-success-title {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #428445 !important;
+  margin-bottom: 4rem;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .form-success-title {
+    font-size: 14px !important;
+    text-align: left !important;
+  }
+}
+
+.form-success-title svg {
+  width: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .form-success-title svg {
+    width: 5rem;
+  }
+}
+
+.form-error-title {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .form-error-title {
+    font-size: 14px !important;
+  }
+}
+
+.form-error-title svg {
+  width: 2rem;
+}
+
+.form-error-text {
+  display: block;
+  font-size: 16px !important;
+  text-align: center;
+  color: #DD0000;
+  margin-bottom: 4rem;
+  position: sticky;
+}
+@media screen and (max-width: 768px) {
+  .form-error-text {
+    font-size: 14px !important;
+  }
+}
+
 /**
  * Swiper 8.1.6
  * Most modern mobile touch slider and framework with hardware accelerated transitions

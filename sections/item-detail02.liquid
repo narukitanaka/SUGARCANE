@@ -1,0 +1,65 @@
+<section class="p-under_wrap p-itemdetail detail-bottom">
+  <div class="inner-wide">
+    <div class="layer">
+
+      <div class="inner">
+
+        {% if product.metafields.custom._flavor_title != blank %}
+          <div class="box flex">
+            <div class="left">
+              <div class="img-box"><img src="{{ product.metafields.custom._flavor_img01 | img_url: 'master' }}" alt=""></div>
+            </div><!-- /.left -->
+            <div class="right">
+              <h3>{{ product.metafields.custom._flavor_title }}</h3>
+              <p>
+                {{ product.metafields.custom._flavor_content01 }}
+              </p>
+            </div>
+          </div><!-- /.box -->
+        {% endif %}
+
+        {% if product.metafields.custom._flavor_title02 != blank %}
+          <div class="box flex reverce">
+            <div class="left">
+              <div class="img-box"><img src="{{ product.metafields.custom._flavor_img02 | img_url: 'master' }}" alt=""></div>
+            </div><!-- /.left -->
+            <div class="right">
+              <h3>{{ product.metafields.custom._flavor_title02 }}</h3>
+              <p>
+                {{ product.metafields.custom._flavor_content02 }}
+              </p>
+            </div>
+          </div><!-- /.box -->
+        {% endif %}
+
+        {% if product.metafields.custom._flavor_title03 != blank %}
+          <div class="box flex">
+            <div class="left">
+              <div class="img-box"><img src="{{ product.metafields.custom._flavor_img03 | img_url: 'master' }}" alt=""></div>
+            </div><!-- /.left -->
+            <div class="right">
+              <h3>{{ product.metafields.custom._flavor_title03 }}</h3>
+              <p>
+                {{ product.metafields.custom._flavor_content03 }}
+              </p>
+            </div>
+          </div><!-- /.box -->
+        {% endif %}
+
+      </div><!-- /.inner -->
+
+    </div><!-- /.layer -->
+  </div><!-- /.inner-wide -->
+</section><!-- /.p-itemdetail -->
+
+
+{% schema %}
+  {
+    "name": "item-detail-bottom",
+    "presets": [
+      {
+        "name": "item-detail-bottom"
+      }
+    ]
+  }
+{% endschema %}

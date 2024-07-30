@@ -50,7 +50,7 @@ fadeIn.forEach((fadeIn) => {
 function showElement(entries) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("active");
+      entry.target.classList.add("fade_active");
     }
   });
 }
@@ -110,6 +110,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     loop: true,
     slidesPerView: 4.5,
     spaceBetween: 30,
+    threshold:10,
     mousewheel: {
       forceToAxis: true,
       sensitivity: 3

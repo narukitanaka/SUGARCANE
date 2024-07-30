@@ -1,0 +1,55 @@
+<div class="top-banner_wrap">
+
+  <div class="inner layer">
+
+    {% for block in section.blocks %}
+      {% if block.type == 'concept-banner' %}
+        <div class="card-wrapper">
+          <div class="card-contents">
+            <div class="img-box">
+              <a href="{{ block.settings.c-link_banner }}">
+                <picture>
+                  <source srcset="{{ block.settings.c-image_banner_sp | img_url: 'master' }}" media="(max-width: 769px)">
+                  <img src="{{ block.settings.c-image_banner_pc | img_url: 'master' }}" alt="">
+                </picture>
+                <div class="btn-wrap"><p class="btn01">VIEW DETAIL</p></div>
+              </a>
+            </div><!-- /.img-box -->
+          </div>
+        </div><!-- /.card-wrapper -->
+      {% endif %}
+    {% endfor %}
+
+  </div>
+
+</div><!-- /.top-banner_wrap -->
+
+
+{% schema %}
+  {
+    "name": "concept-banner",
+    "blocks": [
+      {
+        "type": "concept-banner",
+        "name": "バナー",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "c-image_banner_pc",
+            "label": "PC画像"
+          },
+          {
+            "type": "image_picker",
+            "id": "c-image_banner_sp",
+            "label": "SP画像"
+          },
+          {
+            "type": "url",
+            "id": "c-link_banner",
+            "label": "リンク"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

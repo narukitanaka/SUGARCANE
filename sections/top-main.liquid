@@ -140,7 +140,7 @@
       {% for product in collections.all.products limit: 10 %}
         <div class="item-card swiper-slide">
           <a href="{{ product.url }}" class="h-scale">
-            <div class="img-box">
+            <div class="img-box obj-fit">
               <img src="{{ product.featured_image.src | img_url: 'master' }}" alt="">
             </div>
             <p class="cate">

@@ -1,0 +1,101 @@
+<section class="p-under_wrap p-item-list">
+  <div class="inner-wide">
+    <div class="layer">
+
+      <div class="inner">
+        <div class="under_head-ttl">
+          <div class="img-box"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/icon-logo.svg" alt=""></div>
+          <h2>商品一覧</h2>
+        </div>
+
+        <div class="cate-list flex">
+          <div><a href="/collections/all/" class="btn01 {% if request.path contains 'all' %}active{% endif %}">ALL</a></div>
+          <div><a href="/collections/japan-flavor/" class="btn01 {% if request.path contains 'japan-flavor' %}active{% endif %}">JAPAN FLAVOR</a></div>
+          <div><a href="/collections/world-flavor/" class="btn01 {% if request.path contains 'world-flavor' %}active{% endif %}">WORLD FLAVOR</a></div>
+          <div><a href="/collections/set/" class="btn01 {% if request.path contains 'set' %}active{% endif %}">SET</a></div>
+        </div>
+
+        <div class="item-list flex">
+
+          {% assign has_products = false %}
+
+          {% for product in collection.products %}
+
+            {% assign has_products = true %}
+
+            <div class="item-card">
+              <a href="{{ product.url }}" class="h-scale">
+                <div class="img-box obj-fit">
+                  <img src="{{ product.featured_image.src | img_url: 'master' }}" alt="">
+                </div>
+                <p class="cate">
+                  {% for collection in product.collections %}
+                    {% assign excluded_collections = 'all,tax' | split: ',' %}
+                    {% unless excluded_collections contains collection.handle %}
+                      {{ collection.title }}
+                    {% endunless %}
+                  {% endfor %}
+                </p>
+                <p class="name">{{ product.title }}</p>
+                <p class="price">{{ product.price | money }}<span>(税込)</span></p>
+              </a>
+              <a href="#" class="add-to-cart-btn add-cart"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/add-cart.svg" alt=""></a>
+            </div><!-- /.item-card -->
+
+          {% endfor %}
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              var addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+              addToCartButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                  var variantId = this.getAttribute('data-variant-id');
+                  var quantity = 1; 
+                  fetch('/cart/add.js', {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                      items: [{
+                        id: variantId,
+                        quantity: quantity
+                      }]
+                    })
+                  })
+                  .then(response => response.json())
+                  .then(data => {
+                    console.log('商品がカートに追加されました', data);
+                    alert('商品がカートに追加されました！');
+                  })
+                  .catch(error => {
+                    console.error('カートへの追加に失敗しました。', error);
+                    alert('カートへの追加に失敗しました。');
+                  });
+                });
+              });
+            });
+          </script>
+
+        </div><!-- /.item-list -->
+
+        {% unless has_products %}
+          <p class="unless-has">該当する商品がありません。</p>
+        {% endunless %}
+
+      </div><!-- /.inner -->
+
+    </div><!-- /.layer -->
+  </div><!-- /.inner-wide -->
+</section><!-- /.p-about_wrap01 -->
+
+
+{% schema %}
+  {
+    "name": "item-list",
+    "presets": [
+      {
+        "name": "item-list"
+      }
+    ]
+  }
+{% endschema %}

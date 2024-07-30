@@ -239,6 +239,10 @@ input[type=button]:focus {
   background: url(https://cdn.shopify.com/s/files/1/0660/0186/2794/files/flow-btn.svg) no-repeat center/contain;
   z-index: 997;
 }
+.flow-btn button {
+  width: 100%;
+  height: 100%;
+}
 
 /*************************************************
 アニメーション
@@ -249,7 +253,7 @@ input[type=button]:focus {
   transition: opacity 0.5s, transform 0.5s;
 }
 
-.active {
+.fade_active {
   opacity: 1;
   transform: translateY(0);
 }
@@ -1076,6 +1080,12 @@ top
   align-items: center;
   gap: 18rem;
 }
+.p-under_wrap .cate-list .btn01.active {
+  color: #EE7B50;
+}
+.p-under_wrap .cate-list .btn01.active::before {
+  background: url(https://cdn.shopify.com/s/files/1/0660/0186/2794/files/btn-arrow02.svg) no-repeat center/contain;
+}
 .p-under_wrap .item-list {
   flex-wrap: wrap;
   -moz-column-gap: 3rem;
@@ -1392,7 +1402,7 @@ top
   border-top-right-radius: 0;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  padding: 16rem 0 12.5rem;
+  padding: 8rem 0 12.5rem;
 }
 .p-itemdetail.detail-bottom .box {
   align-items: center;
@@ -1880,6 +1890,29 @@ top
 .p-contact .form_wrap form .btn-wrap {
   display: flex;
   justify-content: center;
+}
+
+/*************************************************
+  レビューアプリ
+*************************************************/
+#judgeme_product_reviews {
+  background-color: #fefff7;
+  max-width: 142rem;
+  margin: 0 auto;
+  padding-top: 8rem;
+}
+#judgeme_product_reviews .jdgm-rev-widg {
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+  z-index: 10;
+}
+#judgeme_product_reviews .jdgm-form {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+#judgeme_product_reviews .jdgm-form .jdgm-form__reviewer-name-format-container {
+  display: none;
 }
 
 /**

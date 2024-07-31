@@ -435,6 +435,22 @@ header
 /*************************************************
 footer
 *************************************************/
+footer {
+  position: relative;
+}
+
+.footer_border-grad::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #fbcf00;
+  background: linear-gradient(90deg, #fbcf00 2% 22%, #fffcd1 40%, #ffd961 92%, #feca2e);
+  z-index: 11;
+}
+
 .fotter-top {
   background-color: #FEFFF7;
   padding: 12.3rem 0 4.6rem;
@@ -1977,6 +1993,44 @@ top
   .form-error-text {
     font-size: 14px !important;
   }
+}
+
+/*************************************************
+マイページ・カート・検索結果　-共通
+*************************************************/
+.custom-inner {
+  width: min(97.2222222222vw, 144rem);
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 4rem 0 8rem;
+}
+
+.custom-layer {
+  position: relative;
+  z-index: 10 !important;
+}
+
+/*************************************************
+マイページ
+*************************************************/
+.addresses button {
+  display: block;
+  margin: 2rem auto 1rem !important;
+}
+
+/*************************************************
+カート
+*************************************************/
+.cartーinner_top {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.cartーinner_bottom {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 /**

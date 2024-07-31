@@ -143,7 +143,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 .isolate {
   position: relative;
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 .section + .section {
@@ -2335,7 +2335,7 @@ input[type='checkbox'] {
 }
 
 .header {
-  display: grid;
+  /* display: grid; */
   grid-template-areas: 'left-icons heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;

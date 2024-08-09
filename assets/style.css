@@ -170,8 +170,18 @@ input[type=button]:focus {
   border-radius: 5px;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .item-card .img-box {
+    margin-bottom: 1rem;
+  }
+}
 .item-card p {
   margin-bottom: 1.1rem;
+}
+@media screen and (max-width: 768px) {
+  .item-card p {
+    margin-bottom: 0.5rem;
+  }
 }
 .item-card p:last-of-type {
   margin-bottom: 0;
@@ -180,22 +190,50 @@ input[type=button]:focus {
   font-size: 1.4rem;
   color: #EE7B50;
 }
+@media screen and (max-width: 768px) {
+  .item-card .cate {
+    font-size: 1.2rem;
+  }
+}
 .item-card .name {
   font-size: 1.6rem;
   letter-spacing: 2px;
+}
+@media screen and (max-width: 768px) {
+  .item-card .name {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
 }
 .item-card .price {
   font-size: 1.8rem;
   letter-spacing: 3px;
 }
+@media screen and (max-width: 768px) {
+  .item-card .price {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+}
 .item-card .price span {
   font-size: 1.4rem;
+}
+@media screen and (max-width: 768px) {
+  .item-card .price span {
+    font-size: 1.1rem;
+  }
 }
 .item-card .add-cart {
   position: absolute;
   top: 36rem;
   right: 1rem;
   transition: all 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .item-card .add-cart {
+    top: 17rem;
+    right: -0.5rem;
+  }
 }
 .item-card .add-cart:hover {
   transform: scale(1.15);
@@ -209,6 +247,16 @@ input[type=button]:focus {
   height: 100vh;
   z-index: -10;
 }
+@media screen and (max-width: 768px) {
+  .bg-filter01 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
 
 .bg-filter02 {
   position: fixed;
@@ -218,6 +266,16 @@ input[type=button]:focus {
   height: 100vh;
   mix-blend-mode: multiply;
   z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .bg-filter02 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
 }
 
 .layer {
@@ -342,6 +400,11 @@ header
   transition: all 0.5s;
   z-index: 999;
 }
+@media screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+}
 .header.header-fixed {
   transform: translateY(0);
 }
@@ -437,6 +500,11 @@ footer
 *************************************************/
 footer {
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    display: none;
+  }
 }
 
 .footer_border-grad::after {
@@ -884,6 +952,11 @@ top
 .p-under_wrap {
   padding: 7.1527777778vw 1.7361111111vw 0;
 }
+@media screen and (max-width: 768px) {
+  .p-under_wrap {
+    padding: 26.6666666667vw 2.6666666667vw;
+  }
+}
 .p-under_wrap .inner-wide {
   width: 100%;
   max-width: 144rem;
@@ -896,6 +969,11 @@ top
 }
 .p-under_wrap .under_head-ttl {
   margin-bottom: 8.7rem;
+}
+@media screen and (max-width: 768px) {
+  .p-under_wrap .under_head-ttl {
+    margin-bottom: 4rem;
+  }
 }
 .p-under_wrap .under_head-ttl .img-box {
   width: 5.1rem;
@@ -1096,11 +1174,38 @@ top
   align-items: center;
   gap: 18rem;
 }
+@media screen and (max-width: 768px) {
+  .p-under_wrap .cate-list {
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-under_wrap .cate-list div {
+    width: 14.7rem;
+    width: calc(50% - 0.75rem);
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-under_wrap .cate-list .btn01 {
+    width: 100%;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+}
 .p-under_wrap .cate-list .btn01.active {
   color: #EE7B50;
 }
 .p-under_wrap .cate-list .btn01.active::before {
   background: url(https://cdn.shopify.com/s/files/1/0660/0186/2794/files/btn-arrow02.svg) no-repeat center/contain;
+}
+@media screen and (max-width: 768px) {
+  .p-under_wrap .cate-list .btn01::before {
+    width: 4rem;
+    right: 0;
+  }
 }
 .p-under_wrap .item-list {
   flex-wrap: wrap;
@@ -1108,8 +1213,20 @@ top
        column-gap: 3rem;
   row-gap: 8rem;
 }
+@media screen and (max-width: 768px) {
+  .p-under_wrap .item-list {
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    row-gap: 4rem;
+  }
+}
 .p-under_wrap .item-list .item-card {
   width: calc(25% - 2.25rem);
+}
+@media screen and (max-width: 768px) {
+  .p-under_wrap .item-list .item-card {
+    width: calc(50% - 0.5rem);
+  }
 }
 
 /*************************************************
@@ -1117,6 +1234,11 @@ top
 *************************************************/
 .p-itemdetail {
   padding: 7.1527777778vw 1.7361111111vw 0;
+}
+@media screen and (max-width: 768px) {
+  .p-itemdetail {
+    padding: 26.6666666667vw 2.6666666667vw 0;
+  }
 }
 .p-itemdetail .inner-wide {
   width: 100%;
@@ -1127,6 +1249,11 @@ top
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   padding: 6rem 0 15rem;
+}
+@media screen and (max-width: 768px) {
+  .p-itemdetail .inner-wide {
+    padding: 4rem 0 9rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .p-itemdetail .inner {
@@ -1364,11 +1491,23 @@ top
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .p-itemdetail .item-infomation .tab_menu li {
+    max-width: 12rem;
+    font-size: 1.4rem;
+  }
+}
 .p-itemdetail .item-infomation .tab_panel {
   background-color: #fff;
   width: 100vw;
   transform: translateX(-1.7361111111vw);
   padding: 8.3rem 0 5.6rem;
+}
+@media screen and (max-width: 768px) {
+  .p-itemdetail .item-infomation .tab_panel {
+    transform: translateX(-2.6666666667vw);
+    padding: 4rem 0 3rem;
+  }
 }
 .p-itemdetail .item-infomation table {
   table-layout: fixed;
@@ -1394,6 +1533,8 @@ top
   .p-itemdetail .item-infomation table th {
     display: block;
     width: 100%;
+    font-size: 1.4rem;
+    padding-left: 0;
     padding-bottom: 0;
   }
 }
@@ -1406,12 +1547,17 @@ top
   .p-itemdetail .item-infomation table td {
     display: block;
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding-top: 0.5rem;
   }
 }
 .p-itemdetail.detail-bottom {
   padding: 0 1.7361111111vw 1.7361111111vw;
+}
+@media screen and (max-width: 768px) {
+  .p-itemdetail.detail-bottom {
+    padding: 0 2.6666666667vw 2.6666666667vw;
+  }
 }
 .p-itemdetail.detail-bottom .inner-wide {
   border-top-left-radius: 0;
@@ -1423,6 +1569,12 @@ top
 .p-itemdetail.detail-bottom .box {
   align-items: center;
   margin-bottom: 8rem;
+}
+@media screen and (max-width: 768px) {
+  .p-itemdetail.detail-bottom .box {
+    display: block;
+    margin-bottom: 5rem;
+  }
 }
 .p-itemdetail.detail-bottom .box:last-of-type {
   margin-bottom: 0;
@@ -1444,10 +1596,26 @@ top
   max-width: 50rem;
   padding-left: 7rem;
 }
+@media screen and (max-width: 768px) {
+  .p-itemdetail.detail-bottom .box .right {
+    width: 100%;
+    padding-left: 0;
+  }
+}
 .p-itemdetail.detail-bottom .box .right h3 {
   font-size: 1.9rem;
   font-weight: 600;
   margin-bottom: 3.8rem;
+}
+@media screen and (max-width: 768px) {
+  .p-itemdetail.detail-bottom .box .right h3 {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-itemdetail.detail-bottom .box .right .img-box {
+    margin-bottom: 1rem;
+  }
 }
 .p-itemdetail.detail-bottom .box .right p {
   font-size: 1.4rem;
@@ -1461,6 +1629,11 @@ top
   margin-bottom: 1.7361111111vw;
   border-radius: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .p-faq .inner-wide {
+    padding-bottom: 4rem;
+  }
+}
 .p-faq .inner-wide .inner {
   max-width: 1240px;
 }
@@ -1470,14 +1643,37 @@ top
   align-items: center;
   gap: 18rem;
 }
+@media screen and (max-width: 768px) {
+  .p-faq .anker-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-faq .anker-list div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-faq .anker-list div .btn01 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-faq .anker-list div .btn01::before {
+    width: 6rem;
+    right: 0;
+  }
+}
 .p-faq .anker-point {
   margin-top: -12rem;
   padding-top: 12rem;
 }
 @media screen and (max-width: 768px) {
   .p-faq .anker-point {
-    margin-top: -8rem;
-    padding-top: 8rem;
+    margin-top: -6rem;
+    padding-top: 6rem;
   }
 }
 .p-faq .block {
@@ -1488,7 +1684,7 @@ top
 @media screen and (max-width: 768px) {
   .p-faq .block {
     margin-bottom: 5rem;
-    padding: 4rem 2.6666666667vw;
+    padding: 0 2.6666666667vw;
   }
 }
 .p-faq .block .sub-ttl {
@@ -1510,7 +1706,7 @@ top
 @media screen and (max-width: 768px) {
   .p-faq .block h2 {
     font-size: 1.6rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     margin-bottom: 0;
   }
 }
@@ -1537,8 +1733,8 @@ top
 }
 @media screen and (max-width: 768px) {
   .p-faq .qa-list .qa::before {
-    width: 2rem;
-    top: 3rem;
+    width: 1.5rem;
+    top: 2.5rem;
   }
 }
 .p-faq .qa-list .qa dt {
@@ -1557,11 +1753,18 @@ top
     line-height: 1.5;
     letter-spacing: 2px;
     align-items: flex-start;
+    padding-left: 0;
     gap: 1rem;
   }
 }
 .p-faq .qa-list .qa dt img {
   width: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .p-faq .qa-list .qa dt img {
+    width: 1.5rem;
+    padding-top: 0.3rem;
+  }
 }
 .p-faq .qa-list .qa dd {
   margin-top: 3rem;
@@ -1609,6 +1812,12 @@ top
   margin-bottom: 1.7361111111vw;
   border-radius: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .p-company .inner-wide, .p-term .inner-wide {
+    padding-bottom: 6rem;
+    margin-bottom: 0.6944444444vw;
+  }
+}
 .p-company .inner-wide .inner, .p-term .inner-wide .inner {
   max-width: 1240px;
 }
@@ -1620,7 +1829,8 @@ top
 }
 @media screen and (max-width: 768px) {
   .p-company table, .p-term table {
-    padding: 2rem;
+    border-spacing: 1rem 0;
+    padding: 0;
   }
 }
 .p-company table tr th, .p-company table tr td, .p-term table tr th, .p-term table tr td {
@@ -1658,6 +1868,7 @@ top
     display: block;
     width: 100%;
     font-size: 1.3rem;
+    padding: 1rem 0 2rem;
   }
 }
 .p-company table tr td span, .p-term table tr td span {
@@ -1667,15 +1878,31 @@ top
 .p-company table {
   margin-bottom: 15rem;
 }
+@media screen and (max-width: 768px) {
+  .p-company table {
+    margin-bottom: 8rem;
+  }
+}
 .p-company .access-map h3 {
   font-size: 2.2rem;
   font-weight: 600;
   text-align: center;
   margin-bottom: 5.72rem;
 }
+@media screen and (max-width: 768px) {
+  .p-company .access-map h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+}
 .p-company .access-map .map {
   width: 100%;
   aspect-ratio: 1/0.27;
+}
+@media screen and (max-width: 768px) {
+  .p-company .access-map .map {
+    aspect-ratio: 1/0.6;
+  }
 }
 
 /*************************************************
@@ -1711,7 +1938,7 @@ top
 @media screen and (max-width: 768px) {
   .p-policy .block h3 {
     font-size: 1.5rem;
-    letter-spacing: 1px;
+    letter-spacing: 0;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
   }
@@ -1721,11 +1948,16 @@ top
 }
 @media screen and (max-width: 768px) {
   .p-policy .block p, .p-policy .block a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 .p-policy .block a {
   text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .p-policy .block a {
+    word-wrap: break-word;
+  }
 }
 
 /*************************************************
@@ -1735,6 +1967,11 @@ top
   padding-bottom: 10rem;
   margin-bottom: 1.7361111111vw;
   border-radius: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .p-contact .inner-wide {
+    padding-bottom: 6rem;
+  }
 }
 .p-contact .inner-wide .inner {
   max-width: 1240px;
@@ -1820,7 +2057,7 @@ top
 }
 @media screen and (max-width: 768px) {
   .p-contact .form_wrap {
-    padding: 4rem 2rem;
+    padding: 0;
     margin-bottom: 2rem;
   }
 }
@@ -1907,6 +2144,11 @@ top
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .p-contact .form_wrap form .btn-wrap {
+    padding-right: 8rem;
+  }
+}
 
 /*************************************************
   レビューアプリ
@@ -1917,11 +2159,22 @@ top
   margin: 0 auto;
   padding-top: 8rem;
 }
+@media screen and (max-width: 768px) {
+  #judgeme_product_reviews {
+    margin: 0 2.6666666667vw;
+    padding-top: 4rem;
+  }
+}
 #judgeme_product_reviews .jdgm-rev-widg {
   position: relative;
   max-width: 80rem;
   margin: 0 auto;
   z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  #judgeme_product_reviews .jdgm-rev-widg {
+    width: 85%;
+  }
 }
 #judgeme_product_reviews .jdgm-form {
   padding: 4rem 2rem;

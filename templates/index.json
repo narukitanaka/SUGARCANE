@@ -45,12 +45,13 @@
           "type": "banner-top",
           "settings": {
             "image_banner_pc": "shopify:\/\/shop_images\/banner01.jpg",
-            "image_banner_sp": "shopify:\/\/shop_images\/banner01.jpg",
+            "image_banner_sp": "shopify:\/\/shop_images\/banner01_sp.jpg",
             "link_banner": "shopify:\/\/collections\/japan-flavor"
           }
         },
         "banner_top_EB9hGR": {
           "type": "banner-top",
+          "disabled": true,
           "settings": {
             "image_banner_pc": "shopify:\/\/shop_images\/banner02.jpg",
             "image_banner_sp": "shopify:\/\/shop_images\/banner02.jpg",

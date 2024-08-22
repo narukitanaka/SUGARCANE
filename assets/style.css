@@ -1085,7 +1085,12 @@ top
   position: relative;
   background-color: #FEFFF7;
   border-radius: 1rem;
-  padding: 11rem 0 17.8rem;
+  padding: 11rem 0 36.8rem;
+}
+@media screen and (max-width: 768px) {
+  .p-top_wrap01 .inner-wide {
+    padding: 11rem 0 17.8rem;
+  }
 }
 .p-top_wrap01 .logo {
   width: 13.5rem;
@@ -1168,7 +1173,7 @@ top
 .p-top_wrap01 .flex .right .box {
   flex-direction: row-reverse;
   gap: 5.6rem;
-  margin-bottom: 9rem;
+  margin-bottom: 4rem;
 }
 @media screen and (max-width: 768px) {
   .p-top_wrap01 .flex .right .box {
@@ -1201,9 +1206,9 @@ top
 .p-top_wrap01 .flex .right .box p {
   font-size: 1.4rem;
   padding-top: 7.2rem;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   line-height: 2.6;
-  height: 45rem;
+  height: 49rem;
 }
 @media screen and (max-width: 768px) {
   .p-top_wrap01 .flex .right .box p {
@@ -1822,6 +1827,10 @@ top
     margin-bottom: 2.6rem;
   }
 }
+.p-about_wrap01 .block02 .box .left .img-box {
+  border-radius: 5px;
+  overflow: hidden;
+}
 .p-about_wrap01 .block02 .box .right {
   display: flex;
   flex-direction: row-reverse;
@@ -1858,11 +1867,13 @@ top
 .p-about_wrap01 .block02 .box .right p {
   font-size: 1.4rem;
   letter-spacing: 4px;
+  height: 24rem;
 }
 @media screen and (max-width: 768px) {
   .p-about_wrap01 .block02 .box .right p {
     letter-spacing: 2px;
     line-height: 1.5;
+    height: auto;
   }
 }
 .p-about_wrap01 .block02 .box.box01 .right h3 span {
@@ -2637,7 +2648,7 @@ top
   margin-bottom: 0;
 }
 .p-faq .qa-list .qa dd p a {
-  color: #FEFFF7;
+  color: #EE7B50;
 }
 .p-faq .qa-list .qa dd p span {
   color: #f00;

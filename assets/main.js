@@ -107,7 +107,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   //TOP　商品一覧スライダー
   const itemlistswiper = new Swiper('.itemlist-swiper', {
-    loop: true,
+    loop: slides.length > 1,
+    // loop: true,
     slidesPerView: 4.5,
     spaceBetween: 30,
     threshold:10,
@@ -124,9 +125,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         spaceBetween: 16,
       },
       769: {
-        slidesPerView: 4,
+        slidesPerView: 3.5,
         spaceBetween: 20,
-      }
+      },
+      1100: {
+        slidesPerView: 4.5,
+        spaceBetween: 30,
+      },
     },
   });
 

@@ -243,7 +243,8 @@
               <p class="name">{{ product.title }}</p>
               <p class="price">{{ product.price | money }}<span>(税込)</span></p>
             </a>
-            <a href="#" class="add-cart add-to-cart-btn"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/add-cart.svg" alt=""></a>
+            {% comment %} <a href="#" class="add-cart add-to-cart-btn" data-variant-id="{{ product.variants.first.id }}"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/add-cart.svg" alt=""></a> {% endcomment %}
+            <button type="button" class="add-cart add-to-cart-btn" data-variant-id="{{ product.variants.first.id }}"><img src="https://cdn.shopify.com/s/files/1/0660/0186/2794/files/add-cart.svg" alt=""></button>
           </div><!-- /.item-card -->
         {% endfor %}
         <script>

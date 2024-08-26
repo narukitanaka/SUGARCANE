@@ -8,12 +8,12 @@
           <h2>商品一覧</h2>
         </div>
 
-        <div class="cate-list flex">
+        {% comment %} <div class="cate-list flex">
           <div><a href="/collections/all/" class="btn01 {% if request.path contains 'all' %}active{% endif %}">ALL</a></div>
           <div><a href="/collections/japan-flavor/" class="btn01 {% if request.path contains 'japan-flavor' %}active{% endif %}">JAPAN FLAVOR</a></div>
           <div><a href="/collections/world-flavor/" class="btn01 {% if request.path contains 'world-flavor' %}active{% endif %}">WORLD FLAVOR</a></div>
           <div><a href="/collections/set/" class="btn01 {% if request.path contains 'set' %}active{% endif %}">SET</a></div>
-        </div>
+        </div> {% endcomment %}
 
         <div class="item-list flex">
 

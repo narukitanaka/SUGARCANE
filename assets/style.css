@@ -1656,7 +1656,7 @@ top
   max-width: 144rem;
   margin: 0 auto;
   height: 100%;
-  background-color: #FEFFF7;
+  background-color: #fefff7;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   padding: 6rem 0 13.7rem;
@@ -1698,7 +1698,7 @@ top
   max-width: 144rem;
   margin: 0 auto;
   height: 100%;
-  background-color: #FEFFF7;
+  background-color: #fefff7;
   border-radius: 1rem;
 }
 @media screen and (max-width: 768px) {
@@ -1920,12 +1920,14 @@ top
     gap: 2rem;
   }
 }
-.p-about_wrap01 .block02 .box .right h3, .p-about_wrap01 .block02 .box .right p {
+.p-about_wrap01 .block02 .box .right h3,
+.p-about_wrap01 .block02 .box .right p {
   writing-mode: vertical-rl;
   line-height: 2;
 }
 @media screen and (max-width: 768px) {
-  .p-about_wrap01 .block02 .box .right h3, .p-about_wrap01 .block02 .box .right p {
+  .p-about_wrap01 .block02 .box .right h3,
+  .p-about_wrap01 .block02 .box .right p {
     writing-mode: horizontal-tb;
   }
 }
@@ -2000,7 +2002,7 @@ top
   max-width: 144rem;
   margin: 0 auto;
   height: 100%;
-  background-color: #FEFFF7;
+  background-color: #fefff7;
   border-radius: 1rem;
 }
 @media screen and (max-width: 768px) {
@@ -2173,7 +2175,7 @@ top
   max-width: 144rem;
   margin: 0 auto;
   height: 100%;
-  background-color: #FEFFF7;
+  background-color: #fefff7;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   padding: 6rem 0 15rem;
@@ -2307,7 +2309,7 @@ top
 }
 .p-itemdetail .detail-content .item-count {
   padding-top: 3.7rem;
-  border-top: 1px solid #1A1A1A;
+  border-top: 1px solid #1a1a1a;
   margin-bottom: 7rem;
 }
 @media screen and (max-width: 768px) {
@@ -2361,7 +2363,7 @@ top
   font-size: 1.6rem;
   font-weight: 700;
   color: #fff;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -2401,6 +2403,7 @@ top
   line-height: 2;
 }
 .p-itemdetail .detail-content .txt {
+  font-size: 1.5rem;
   line-height: 2;
   letter-spacing: 0;
 }
@@ -2447,7 +2450,8 @@ top
 .p-itemdetail .item-infomation table tr:first-of-type {
   border-top: 1px dashed #1a1a1a;
 }
-.p-itemdetail .item-infomation table th, .p-itemdetail .item-infomation table td {
+.p-itemdetail .item-infomation table th,
+.p-itemdetail .item-infomation table td {
   padding: 2rem 0 1.5rem;
   letter-spacing: 2px;
 }
@@ -2513,7 +2517,8 @@ top
 .p-itemdetail.detail-bottom .box.reverce .right {
   margin: 0 auto 0 0;
 }
-.p-itemdetail.detail-bottom .box .left, .p-itemdetail.detail-bottom .box .right {
+.p-itemdetail.detail-bottom .box .left,
+.p-itemdetail.detail-bottom .box .right {
   flex-basis: 50%;
 }
 .p-itemdetail.detail-bottom .box .left .img-box {
@@ -2626,7 +2631,7 @@ top
   font-size: 1.6rem;
   text-align: center;
   letter-spacing: 3px;
-  color: #F1B342;
+  color: #f1b342;
   margin-bottom: 0.5rem;
 }
 .p-faq .block h2 {
@@ -2741,50 +2746,63 @@ top
 /*************************************************
 　会社概要・特商法
 *************************************************/
-.p-company .inner-wide, .p-term .inner-wide {
+.p-company .inner-wide,
+.p-term .inner-wide {
   padding-bottom: 10rem;
   margin-bottom: 1.7361111111vw;
   border-radius: 1rem;
 }
 @media screen and (max-width: 768px) {
-  .p-company .inner-wide, .p-term .inner-wide {
+  .p-company .inner-wide,
+  .p-term .inner-wide {
     padding-bottom: 6rem;
     margin-bottom: 5.1282051282vw;
   }
 }
-.p-company .inner-wide .inner, .p-term .inner-wide .inner {
+.p-company .inner-wide .inner,
+.p-term .inner-wide .inner {
   max-width: 1240px;
 }
-.p-company table, .p-term table {
+.p-company table,
+.p-term table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 3rem 0;
   padding: 0 8rem;
 }
 @media screen and (max-width: 768px) {
-  .p-company table, .p-term table {
+  .p-company table,
+  .p-term table {
     border-spacing: 1rem 0;
     padding: 0;
   }
 }
-.p-company table tr th, .p-company table tr td, .p-term table tr th, .p-term table tr td {
+.p-company table tr th,
+.p-company table tr td,
+.p-term table tr th,
+.p-term table tr td {
   font-size: 1.5rem;
   letter-spacing: 2px;
   line-height: 2;
 }
 @media screen and (max-width: 768px) {
-  .p-company table tr th, .p-company table tr td, .p-term table tr th, .p-term table tr td {
+  .p-company table tr th,
+  .p-company table tr td,
+  .p-term table tr th,
+  .p-term table tr td {
     line-height: 1.7;
   }
 }
-.p-company table tr th, .p-term table tr th {
+.p-company table tr th,
+.p-term table tr th {
   width: 20%;
   font-weight: 0;
   padding: 2rem 0;
   border-bottom: 1px solid #EE7B50;
 }
 @media screen and (max-width: 768px) {
-  .p-company table tr th, .p-term table tr th {
+  .p-company table tr th,
+  .p-term table tr th {
     display: block;
     width: 100%;
     padding-bottom: 0;
@@ -2792,20 +2810,23 @@ top
     font-size: 1.4rem;
   }
 }
-.p-company table tr td, .p-term table tr td {
+.p-company table tr td,
+.p-term table tr td {
   font-weight: 500;
   padding: 2rem 1rem;
   border-bottom: 1px solid #000;
 }
 @media screen and (max-width: 768px) {
-  .p-company table tr td, .p-term table tr td {
+  .p-company table tr td,
+  .p-term table tr td {
     display: block;
     width: 100%;
     font-size: 1.3rem;
     padding: 1rem 0 2rem;
   }
 }
-.p-company table tr td span, .p-term table tr td span {
+.p-company table tr td span,
+.p-term table tr td span {
   color: #f00;
 }
 
@@ -2856,7 +2877,10 @@ top
 .p-policy .inner-wide .inner {
   max-width: 1240px;
 }
-.p-policy h3, .p-policy p, .p-policy li, .p-policy a {
+.p-policy h3,
+.p-policy p,
+.p-policy li,
+.p-policy a {
   line-height: 2;
 }
 .p-policy .block {
@@ -2883,11 +2907,13 @@ top
     margin-bottom: 1rem;
   }
 }
-.p-policy .block p, .p-policy .block a {
+.p-policy .block p,
+.p-policy .block a {
   font-size: 1.5rem;
 }
 @media screen and (max-width: 768px) {
-  .p-policy .block p, .p-policy .block a {
+  .p-policy .block p,
+  .p-policy .block a {
     font-size: 1.3rem;
   }
 }
@@ -3052,7 +3078,8 @@ top
     font-size: 1.4rem;
   }
 }
-.p-contact .form_wrap form table tr td input, .p-contact .form_wrap form table tr td textarea {
+.p-contact .form_wrap form table tr td input,
+.p-contact .form_wrap form table tr td textarea {
   width: 100%;
   background-color: #fff;
   padding: 15px 25px;
@@ -3063,7 +3090,8 @@ top
   line-height: 1.5;
 }
 @media screen and (max-width: 768px) {
-  .p-contact .form_wrap form table tr td input, .p-contact .form_wrap form table tr td textarea {
+  .p-contact .form_wrap form table tr td input,
+  .p-contact .form_wrap form table tr td textarea {
     padding: 1rem;
   }
 }
@@ -3186,7 +3214,7 @@ top
   display: block;
   font-size: 16px !important;
   text-align: center;
-  color: #DD0000;
+  color: #dd0000;
   margin-bottom: 4rem;
   position: sticky;
 }
